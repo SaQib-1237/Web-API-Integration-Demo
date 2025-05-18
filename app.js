@@ -40,11 +40,15 @@ fetch("https://jsonplaceholder.typicode.com/posts")
 
   let newHTML = '';
 for (let i = 0; i < filterusers.length; i++) {
+
   let {id, title, body} = filterusers[i]
+
    newHTML += `<div class = "post"> 
-   <h3>Id : ${JSON.stringify (id)}</h3>
-   <h4> <b>Titile</b> : ${JSON.stringify (title)}</h4>
-   <h5><b>Post </b>: ${JSON.stringify (body)}</h5>
+   
+    <h3>Id : ${JSON.stringify (id)}</h3>
+    <h4> <b>Titile</b> : ${JSON.stringify (title)}</h4>
+    <h5><b>Post </b>: ${JSON.stringify (body)}</h5>
+   
    </div>
    `;
    
